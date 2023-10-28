@@ -12,13 +12,15 @@ public class TextBlocks {
 
     public static String getStrValue(){
         return  """
-                Learning Java
-                    with JDK 17
+                Learning Java.
+                  Version :
+                  "JDK 17"
                 """;
     }
 
     public static String getStrValueOld(){
         return "Learning Java\n" +
-                "    with JDK 17";
+                "  Version :\n" +
+                "  \"JDK 17\"";
     }
 }
