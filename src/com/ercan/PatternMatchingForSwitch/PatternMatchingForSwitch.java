@@ -28,6 +28,9 @@ public class PatternMatchingForSwitch {
         var result5 = numberOfLettersSwitch("Orange");
         System.out.println(result5);
 
+        System.out.println("*** Example6 ****");
+        print(20);
+
     }
 
     /**
@@ -85,7 +88,16 @@ public class PatternMatchingForSwitch {
         };
     }
 
+    public static void print(Integer val){
+        switch (val){
+            case null -> System.out.println("val is null.");
+            case 10 -> System.out.println("val is 10.");
+            case 20 -> System.out.println("val is 20.");
+            default -> System.out.println("val does not match.");
+        }
+    }
 
+    
     /*** OLD APPROACHES **/
 
     // Using if
