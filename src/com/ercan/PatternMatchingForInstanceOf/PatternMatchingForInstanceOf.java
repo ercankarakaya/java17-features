@@ -1,6 +1,6 @@
 package com.ercan.PatternMatchingForInstanceOf;
 
-public class PatternMatchingInstanceForOf {
+public class PatternMatchingForInstanceOf {
     public static void main(String[] args) {
 
         var result = checkTypePatternMatching("Java");
