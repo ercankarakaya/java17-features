@@ -97,6 +97,11 @@ public class PatternMatchingForSwitch {
         }
     }
 
+    public static void print(Object val) {
+        switch (val) {
+            case null,default -> System.out.println("Invalid value!");
+        }
+    }
 
 
     /*** OLD APPROACHES **/
