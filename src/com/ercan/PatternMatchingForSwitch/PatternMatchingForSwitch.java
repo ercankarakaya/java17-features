@@ -24,6 +24,10 @@ public class PatternMatchingForSwitch {
         var result4 = numberOfLettersSwitch(Day.FRIDAY);
         System.out.println(result4);
 
+        System.out.println("*** Example5 ****");
+        var result5 = numberOfLettersSwitch("Orange");
+        System.out.println(result5);
+
     }
 
     /**
@@ -69,6 +73,15 @@ public class PatternMatchingForSwitch {
             case TUESDAY -> 7;
             case THURSDAY, SATURDAY -> 8;
             case WEDNESDAY -> 9;
+        };
+    }
+
+    public static int numberOfLettersSwitch(String str) {
+        return switch (str) {
+            case "Apple" -> 5;
+            case "Orange","Banana"-> 6;
+            case null -> throw new NullPointerException(); // null check & Handling null values
+            default -> 0;
         };
     }
 
