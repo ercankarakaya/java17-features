@@ -82,14 +82,14 @@ public class PatternMatchingForSwitch {
     public static int numberOfLettersSwitch(String str) {
         return switch (str) {
             case "Apple" -> 5;
-            case "Orange","Banana"-> 6;
+            case "Orange", "Banana" -> 6;
             case null -> throw new NullPointerException(); // null check & Handling null values
             default -> 0;
         };
     }
 
-    public static void print(Integer val){
-        switch (val){
+    public static void print(Integer val) {
+        switch (val) {
             case null -> System.out.println("val is null.");
             case 10 -> System.out.println("val is 10.");
             case 20 -> System.out.println("val is 20.");
@@ -97,7 +97,8 @@ public class PatternMatchingForSwitch {
         }
     }
 
-    
+
+
     /*** OLD APPROACHES **/
 
     // Using if
@@ -146,14 +147,8 @@ public class PatternMatchingForSwitch {
         return letters;
     }
 
-    /** Enum */
-    enum Day {
-        MONDAY,
-        TUESDAY,
-        WEDNESDAY,
-        THURSDAY,
-        FRIDAY,
-        SATURDAY,
-        SUNDAY
-    }
+    /**
+     * Enum
+     */
+    enum Day {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY}
 }
